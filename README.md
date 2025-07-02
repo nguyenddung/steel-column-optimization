@@ -3,6 +3,7 @@
  # Steel Column Optimization
 
 This project aims to optimize the design of steel columns based on various parameters to ensure safety, cost-effectiveness, and material efficiency.
+[Bài báo của tôi làm](https://tapchixaydung.vn/nghien-cuu-toi-uu-hoa-tiet-dien-cot-chong-tam-trong-thi-cong-tang-ham-bang-phuong-phap-topdown-20201224000027940.html)
 
 
 
