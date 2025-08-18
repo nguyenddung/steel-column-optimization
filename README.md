@@ -1,30 +1,96 @@
-# steel-column-optimization
-Đây là dự án tôi làm từ năm nhất ! Tối ưu tiết diện cột thép Kingpos cho trường Đại Học Xây Dựng . Sử dụng thuật toán tiến hoá vi phân (different generation) và mở rộng bằng GDE(gready different generation)
-[Bài báo của tôi làm](https://tapchixaydung.vn/nghien-cuu-toi-uu-hoa-tiet-dien-cot-chong-tam-trong-thi-cong-tang-ham-bang-phuong-phap-topdown-20201224000027940.html)
+# 🏗️ Steel Column Optimization
 
- # Steel Column Optimization
+## 📖 Giới thiệu
+Đây là dự án mình thực hiện từ năm nhất 🎓.  
+Mục tiêu là **tối ưu hoá tiết diện cột thép Kingpost** trong công trình Top-Down tại Trường Đại học Xây dựng.  
 
-This project aims to optimize the design of steel columns based on various parameters to ensure safety, cost-effectiveness, and material efficiency.
+- Áp dụng **thuật toán tiến hoá vi phân (Differential Evolution - DE)**.  
+- Mở rộng thêm biến thể **GDE (Greedy Differential Evolution)** để tăng tốc độ hội tụ.  
+- Đáp ứng **các điều kiện kỹ thuật** về bền, ổn định, và khả năng chịu lực theo tiêu chuẩn xây dựng.  
 
+🔗 Tham khảo thêm tại bài báo:  
+[Nghiên cứu tối ưu hóa tiết diện cột chống tạm trong thi công tầng hầm bằng phương pháp Top-down](https://tapchixaydung.vn/nghien-cuu-toi-uu-hoa-tiet-dien-cot-chong-tam-trong-thi-cong-tang-ham-bang-phuong-phap-topdown-20201224000027940.html)
 
+---
 
-### Prerequisites
-Before you begin, make sure you have the following installed:
-- Python 3.x (You can download it from [here](https://www.python.org/downloads/))
-- Pip (Python package installer)
+## 🚀 Tính năng
+- Giao diện trực quan bằng **Tkinter**.  
+- Nhập thông số tải trọng, kích thước, đặc trưng vật liệu.  
+- Chạy thuật toán DE để tìm ra tiết diện cột thép **tối ưu về diện tích và đảm bảo an toàn**.  
+- Kiểm tra tự động các điều kiện kỹ thuật:  
+  - Bền nén, bền cắt.  
+  - Độ ổn định tổng thể.  
+  - Điều kiện kích thước hợp lệ.  
 
-### Steps to Install
-1. Clone this repository:
-   git clone https://github.com/yourusername/steel-column-optimization.git
-Navigate to the project directory:
+---
 
+## 🛠️ Cài đặt
 
+### Yêu cầu
+- Python 3.x ([Download](https://www.python.org/downloads/))
+- Thư viện chuẩn `tkinter`, `math`, `random` (có sẵn trong Python).  
 
+### Cách chạy
+Clone project và chạy file Python:
+
+```bash
+git clone https://github.com/yourusername/steel-column-optimization.git
 cd steel-column-optimization
-Install the required dependencies:
+python SteelColumnOptimization.py
+Ứng dụng Tkinter sẽ mở ra giao diện nhập liệu và tính toán.
+```
+📊 Các thông số đầu vào
 
+N: Lực dọc (daN)
 
-pip install -r requirements.txt
-If you don't have requirements.txt yet, you can manually install the required packages. For example:
+V: Lực cắt (daN)
 
-pip install numpy pandas matplotlib
+Mx, My: Moment uốn theo 2 phương (daN.cm)
+
+D: Đường kính cọc khoan (mm)
+
+L0: Chiều dài cột (m)
+
+F: Hệ số khuếch đại (DE parameter)
+
+Cr: Chỉ số lai ghép (DE parameter)
+
+Số vòng lặp: Population size / Iterations
+
+Thông số vật liệu: cường độ chịu kéo, chịu cắt, mô đun đàn hồi E, hệ số an toàn γc.
+
+🧮 Thuật toán sử dụng
+
+Differential Evolution (DE):
+
+Sinh quần thể ngẫu nhiên các phương án tiết diện.
+
+Lai ghép và đột biến để sinh nghiệm mới.
+
+Lựa chọn dựa trên hàm mục tiêu (diện tích tiết diện nhỏ nhất thoả mãn điều kiện kỹ thuật).
+
+Hàm mục tiêu:
+
+<img width="441" height="59" alt="image" src="https://github.com/user-attachments/assets/75e288e2-ad39-4d58-b899-ab4583893a02" />
+
+	​
+
+📌 Kết quả
+
+Xuất ra kích thước cột thép tối ưu:
+
+Chiều cao bụng (Hc).
+
+Bản cánh (Bf).
+
+Bản cánh dày (Tf).
+
+Bản bụng dày (Tw).
+
+Tính toán diện tích tiết diện.
+
+👨‍💻 Tác giả
+
+Nguyễn Đức Dũng – FPT University
+
+Nghiên cứu & ứng dụng từ năm nhất 🎓
