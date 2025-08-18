@@ -72,19 +72,11 @@ Lựa chọn dựa trên hàm mục tiêu (diện tích tiết diện nhỏ nh�
 Hàm mục tiêu:
 
 <img width="441" height="59" alt="image" src="https://github.com/user-attachments/assets/75e288e2-ad39-4d58-b899-ab4583893a02" />
+
 📌 Kết quả
 
-Xuất ra kích thước cột thép tối ưu:
+<img width="794" height="394" alt="image" src="https://github.com/user-attachments/assets/2a0e276d-157a-45dd-a245-09691223e668" />
 
-Chiều cao bụng (Hc).
-
-Bản cánh (Bf).
-
-Bản cánh dày (Tf).
-
-Bản bụng dày (Tw).
-
-Tính toán diện tích tiết diện.
 
 👨‍💻 Tác giả
 
