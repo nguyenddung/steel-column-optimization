@@ -82,4 +82,4 @@ Hàm mục tiêu:
 
 Nguyễn Đức Dũng – FPT University
 
-Nghiên cứu & ứng dụng từ năm nhất 🎓
+Nghiên cứu & ứng dụng  🎓
